@@ -13,9 +13,13 @@ public class InputListener {
          actionList.add(action);
     }
 
+    public void addListener(EventAction action) {
+        addListener("", action);
+    }
+
     public void executeEvent(String event){
         for (int i = 0; i < inputList.size(); i++) {
-            if(event.equals(inputList.get(i))) {
+            if(event.equals(inputList.get(i)) || inputList.get(i).isEmpty()) {
                 actionList.get(i).onKeyEvent();
 
                 inputList.remove(i);
