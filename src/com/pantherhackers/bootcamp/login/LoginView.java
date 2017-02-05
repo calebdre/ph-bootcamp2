@@ -1,13 +1,13 @@
 package com.pantherhackers.bootcamp.login;
 
-import com.pantherhackers.bootcamp.navigation.NavigatorView;
+import com.pantherhackers.bootcamp.navigation.NavigationView;
 import com.pantherhackers.bootcamp.util.InputListener;
 import com.pantherhackers.bootcamp.util.Printer;
 
 public class LoginView {
 
-    InputListener listener;
-    LoginPresenter presenter;
+    private InputListener listener;
+    private LoginPresenter presenter;
 
     public LoginView(InputListener listener) {
         this.listener = listener;
@@ -24,7 +24,7 @@ public class LoginView {
 
         LoginCredentials credentials = credentialsBuilder.build();
         if(presenter.login(credentials)){
-            new NavigatorView(listener).render();
+            new NavigationView(listener).render();
         }
     }
 }

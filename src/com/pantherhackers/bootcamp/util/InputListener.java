@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class InputListener {
 
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     public void prompt(String prompt, Action<String> action) {
         Printer.print(prompt + ": ");

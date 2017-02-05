@@ -6,10 +6,11 @@ import com.pantherhackers.bootcamp.alerts.AlertsView;
 import com.pantherhackers.bootcamp.deposit.DepositView;
 import com.pantherhackers.bootcamp.withdraw.WithdrawView;
 
-public class NavigatorView {
-    InputListener listener;
+public class NavigationView {
 
-    public NavigatorView(InputListener listener) {
+    private InputListener listener;
+
+    public NavigationView(InputListener listener) {
         this.listener = listener;
     }
 
