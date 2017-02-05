@@ -20,5 +20,6 @@ public class NavigatorView {
         builder.addOption("Withdraw", new WithdrawView());
         builder.addOption("Deposit", new DepositView());
         builder.addOption("View Alerts", new AlertsView());
+        builder.build();
     }
 }

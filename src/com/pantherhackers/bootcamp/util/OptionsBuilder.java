@@ -25,7 +25,7 @@ public class OptionsBuilder<T> {
         }
 
         listener.prompt("", (input) -> {
-            action.execute(options.get(Integer.parseInt(input)));
+            action.execute(options.get(Integer.parseInt(input) - 1));
         });
     }
 }
