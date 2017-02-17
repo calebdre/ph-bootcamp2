@@ -2,8 +2,13 @@ package com.pantherhackers.bootcamp.login;
 
 public class LoginPresenter {
 
+    LoginModel model;
+
+    public LoginPresenter() {
+        this.model = new LoginModel();
+    }
+
     public boolean login(LoginCredentials credentials) {
-        // take care of this later
-        return true;
+        return model.verifyLogin(credentials);
     }
 }
